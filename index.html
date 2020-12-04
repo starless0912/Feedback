@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="./Resource/CSS/Style.css" type="text/css" rel="stylesheet">
+    <script src="./Resource/Script/Script_postboard.js" defer></script>
+    <script src="./Resource/Script/mailSystem.js" defer></script>
+
+    <meta charset="utf-8" />
+    <title>We want Feedback!</title>
+
+</head>
+<body>
+
+    <header>
+        <h3 class="center imply">Think carefully what you want to tell us. </h3>
+
+        <h1 class="center bold"> We Value Your Voice!</h1>
+
+        <h3 class="center imply">What do you want to tell your leader?</h3>
+    </header>
+
+    <div id="nav" class="right">
+
+    </div>
+
+    <div id="doc" class="center">
+
+        <ol>
+            <li>Listen to your leader.</li>
+            <li>Be greatful to your leader.</li>
+            <li>Think of what you can do for your leader.</li>
+
+
+
+        </ol>
+
+
+        <br />
+    </div>
+
+
+
+
+    <table class="center">
+        <thead>
+            <tr>
+                <td id="commentcontent">People's Voice</td>
+                <td>Posted By</td>
+                <td>Status</td>
+
+            </tr>
+        </thead>
+        <tbody id="post">
+        </tbody>
+
+
+
+
+
+    </table>
+
+
+
+
+    <form id="form1">
+        <br />
+
+        <input id="clear" class="button center" type="button" value="Clear All Posts" onclick="clearall()" />
+        <br />
+
+
+        <h4 class="center">Give us your feedback.</h4>
+
+        <textarea type="text" id="feedback" name="feedback" rows="20" cols="100" onclick="PostShow()">
+HE will want to hear from you.
+        </textarea>
+
+        <br>
+
+        <input id="button1" class="button" type="button" name="Submit" onclick="Collect()" value="Submit">
+
+
+    </form>
+
+    <div id="board" class="center">
+
+    </div>
+
+    <div id="reportWindow" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="center">Please think carefully about who you'd like to report. There will be consequence.</p>
+            <br />
+            <h3 class="center">Enter Their ID.</h3>
+            <center>
+                <input type="text" id="ReportedID" name="IDnumber" />
+
+
+                <br />
+                <br />
+                <input type="button" id="reportIDSubmit" value="submit" />
+            </center>
+
+        </div>
+
+    </div>
+    <footer id="report" class="center"><br /><br /></footer>
+
+
+</body>
+</html>

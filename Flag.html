@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="./Resource/CSS/Style.css" type="text/css" rel="stylesheet">
+    <script src="./Resource/Script/FlagSystem.js" defer></script>
+    <script src="./Resource/Script/mailSystem.js" defer></script>
+
+    <meta charset="utf-8" />
+    <title>The National Security Flag Page</title>
+</head>
+<body>
+
+
+    <header class="center">
+
+        <h2> The Security of Our Nation is Our Top Concern</h2>
+    </header>
+
+    <br />
+    <div id="nav" class="right">
+
+    </div>
+
+    <div id="flagbox">
+        <table class="center">
+            <thead>
+                <tr>
+                    <td id="commentcontent">Unprocessed Comments</td>
+                    <td>Posted By</td>
+                    <td>Flag</td>
+
+                </tr>
+            </thead>
+            <tbody id="comment">
+            </tbody>
+
+
+
+
+
+        </table>
+        <form>
+            <br />
+            <input id="submit" class="button center" type="button" value="Submit" onclick="SubmitFlag()" />
+
+
+        </form>
+
+
+    </div>
+
+    <div id="message" class="center">
+        <br />
+        <h3>Thank you for your service! Your work will be submitted for peer reviews.</h3>
+
+        <h4 class="center"><a href="./ToFlag.html"> Return</a></h4>
+
+
+    </div>
+
+
+    <div id="reportWindow" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="center">Please think carefully about who you'd like to report. There will be consequence.</p>
+            <br />
+            <h3 class="center">Enter Their ID.</h3>
+            <center>
+                <input type="text" id="ReportedID" name="IDnumber" />
+
+
+                <br />
+                <br />
+                <input type="button" id="reportIDSubmit" value="submit" />
+            </center>
+
+        </div>
+
+    </div>
+
+    <footer id="report" class="center"><br /><br /></footer>
+
+
+
+
+
+</body>
+</html>
