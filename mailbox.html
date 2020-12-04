@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="./Resource/CSS/Style.css" type="text/css" rel="stylesheet">
+    <script src="./Resource/Script/MailInBox.js" defer></script>
+    <script src="./Resource/Script/mailSystem.js" defer></script>
+
+    <title>Inbox</title>
+</head>
+<body>
+    <header class="center">
+
+        <h2 class="bold"> MAILS</h2>
+
+    </header>
+
+    <div id="nav" class="right">
+
+
+
+    </div>
+
+
+    <div class="mailbox" id="mailbox">
+        <div class="list">
+        </div>
+        <div class="mail">
+            <div class="display">
+                <div class="title"></div>
+                <div class="sender"></div>
+                <div class="content" data-content="mommy is your mommy mom"></div>
+            </div>
+            <div class="write">
+               
+                
+                <center>
+                    <label id="IDlabel" for="IDnumber">Reciver's ID:</label>
+                    <input id="IDnumber" type="text" class="idinput" name="name" required />
+                    <br />
+                    <br />
+                    <textarea class="contentinput" type="text" name="feedback" rows="18" cols="120"></textarea>
+                    <br />
+                    <input id="sendmail" class="button" type="button" name="Submit" onclick="sendMail()" value="Send">
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reportWindow" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" >
+            <span class="close">&times;</span>
+            <p class="center">Please think carefully about who you'd like to report. There will be consequence.</p>
+            <br />
+            <h3 class="center">Enter Their ID.</h3>
+            <center>
+                <input type="text" id="ReportedID" name="IDnumber" />
+
+
+                <br />
+                <br />
+                <input type="button" id="reportIDSubmit" value="submit"  />
+            </center>
+
+        </div>
+
+    </div>
+
+    <footer id="report" class="center"><br /><br /></footer>
+
+
+</body>
+</html>
