@@ -82,7 +82,7 @@ function sendMail() {
 		alert("You got a new message!");
 
 		add_email("in", "FROM Tahlia Salter", "TO you", "JOIN US",
-		" <a href = ./TrueEND.html>WE NEED YOU.</a> ")
+		" <a href = ./TrueEnd.html>WE NEED YOU.</a> ")
 
 
 	}
